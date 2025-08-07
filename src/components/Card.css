@@ -1,0 +1,110 @@
+.btn-carrinho {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-carrinho img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.btn-favorito {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-favorito img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.card-img-container {
+  position: relative;
+  width: 100%;
+}
+
+.card-img-container img {
+  width: 220px;
+  height: 220px;
+  display: block;
+}
+
+.badge-desconto {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  color: #B11B26;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.card-carrossel {
+  padding: 10px;
+}
+
+.card-carrossel h2 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.slide-card {
+  width: 220px;
+  align-items: flex-start;
+  text-align: center;
+  user-select: none;
+}
+
+.slide-card img {
+  width: 100%;
+  height: 281px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.precos {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.precos s {
+  color: gray;
+  font-size: 14px;
+}
+
+.preco {
+  color: black;
+  font-size: 14px;
+  text-align: left;
+}
+
+.texto {
+    font-size: 12px;
+    text-align: left;
+}

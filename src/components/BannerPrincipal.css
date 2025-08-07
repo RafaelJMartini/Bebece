@@ -1,0 +1,49 @@
+.banner-swiper {
+  position: relative;
+  width: 100vw;
+}
+
+.banner-slide {
+  position: relative;
+}
+
+.banner-slide img {
+  width: 100%;
+  display: block;
+}
+
+.btn-conheca {
+  width: 150px;
+  height: 43px;
+  position: absolute;
+  bottom: 12px;
+  left: 24px;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(16px);
+  border: 1px solid #FFFFFF;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 660px;
+  width: auto !important;
+  left: 335px !important;
+  display: flex !important;
+  gap: 4px
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+}

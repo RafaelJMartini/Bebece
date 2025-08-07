@@ -1,0 +1,42 @@
+.rodape {
+  background-color: #B11B26;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.rodape .logo img {
+  max-width: 160px;
+  margin-bottom: 20px;
+}
+
+.icones-sociais img {
+  width: 24px;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.links div strong {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.links div a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.links div a:hover {
+  text-decoration: underline;
+}

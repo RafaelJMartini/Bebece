@@ -1,0 +1,136 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
+}
+
+.header-side {
+  display: flex;
+  gap: 16px;
+}
+
+.header.scrolled {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#menuBtn {
+  font-size: 24px;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#menuLateral {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background: white;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#menuLateral ul {
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menuLateral ul li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#menuLateral.aberto {
+  left: 0;
+}
+
+#fecharBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.categoria {
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenu {
+  font-size: 14px;
+  padding: 5px 0;
+  padding-left: 15px;
+  animation: abrirSubmenu 0.2s ease;
+}
+
+.submenu > li{
+  padding-left: 20px;
+}
+
+.seta {
+  font-size: 12px;
+}
+
+@keyframes abrirSubmenu {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.contador-carrinho {
+  position: static;
+  top: -6px;
+  right: -6px;
+  color: black;
+  border-radius: 12px;
+  font-size: 14px;
+  padding: 2px 2px;
+}
+
+.carrinho-container {
+  display: flex;
+  align-items: center;
+  gap: 6px; 
+  position: relative;
+}
+
+.mensagem-carrinho {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+  animation: fadeinout 3s forwards;
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}

@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+Nota: Precisa instalar o Swiper do React para rodar o projeto
+
 # Project-Bebece
 =======
 # Getting Started with Create React App
